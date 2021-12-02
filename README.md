@@ -11,14 +11,19 @@ To use JS instead of TypeScript rename src/index.ts to index.js
 
 You will have to restart server after making changes to see them appear.
 
-# Challenge: Shared Todo List
+# Challenge: Global Todo List
 
-Create an API for a TODO list. Open book, google, use any libraries you like.
+Create an API for a Todo list. This challenge is open book. You may search web and use any libraries you like.
 
 ## Use cases
 
-- User can create a new todo list
-- User can add a list item to todo list
-- User can mark list item as done
+- User can view todo list
+- User can add an item to todo list
+- User can mark an item as done
 
-_This page left intentionally vague_
+# Things to consider
+
+* Persistence choice (while optimizing for the shortness of the interview)
+* Routes, status codes, and HTTP verbs
+* Impact of choices on UI
+* Types/Contracts

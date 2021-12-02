@@ -2,11 +2,13 @@
 import express from "express";
 import { port } from "./config";
 
-const app = express();
-// enable json apis
-app.use(express.json());
-app.get("/", (_req, res) => {
-  res.send("Hello world!");
+const app = express().use(
+  express.json(), // enable json apis
+  express.static('public') // serve public directory
+);
+
+app.get("/hello_world", (_req, res) => {
+  res.json({message: "Hello world!"});
 });
 
 app.listen(port, () => {
