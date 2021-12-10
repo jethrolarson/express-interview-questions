@@ -7,8 +7,8 @@ const app = express().use(
   express.static('public') // serve public directory
 );
 
-app.get("/hello_world", (_req, res) => {
-  res.json({message: "Hello world!"});
+app.get("/hello_world", (_request, response) => {
+  response.json({message: "Hello world!"});
 });
 
 app.listen(port, () => {
